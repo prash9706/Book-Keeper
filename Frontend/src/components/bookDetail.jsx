@@ -70,7 +70,7 @@ class BookDetail extends Component {
         return (
             <div className="container">
                 <h1>Book Detail</h1>
-                <p><img src="/images/+{this.state.book.imageId}" alt=""/></p>
+                <p><img src={"/images/"+this.state.book.imageId} alt="" class="w-25 h-25"/></p>
                 <p>Title: {this.state.book.title}</p>
                 <p>Course: {this.state.book.course.name}</p>
                 <p>Description:{this.state.book.description}</p>

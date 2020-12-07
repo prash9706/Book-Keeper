@@ -21,7 +21,7 @@ router.post("/", [auth], async (req, res) => {
 
   const course = await Course.findById(req.body.courseId);
   if (!course) return res.status(400).send("Invalid course.");
-
+console.log(req.body.imageId);
   const book = new Book({
     title: req.body.title,
     course: {
@@ -34,7 +34,7 @@ router.post("/", [auth], async (req, res) => {
     author: req.body.author,
     publication: req.body.publication,
     description: req.body.description,
-    imageId: req.body.imageId,
+    imageId: req.body.imageId.split("\\")[2],
     publishDate: moment().toJSON()
   });
   await book.save();
