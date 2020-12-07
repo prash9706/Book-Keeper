@@ -9,7 +9,7 @@
     "test": "jest --watchAll --verbose"
   },
   "keywords": [],
-  "author": "Prashuk Ajmera",
+  "author": "Prashant Yadav",
   "license": "",
   "dependencies": {
     "bcrypt": "^3.0.8",

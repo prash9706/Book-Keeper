@@ -1,6 +1,3 @@
-# React-Ecommerce-Web-App
-
-https://myapp-react-e-commerce.web.app/register
 
 Note: Backend (Express + Nodejs + Mongo) server is down due to expiration of free account.
 
@@ -16,12 +13,12 @@ Make sure to follow all these steps exactly as explained below. Do not miss any 
 
 From the project folder, install the dependencies:
 
-    sudo npm update
-    sudo npm install
+    npm update
+    npm install
 
 ### Start
 
-    sudo npm start
+    npm start
 
 This will launch the Node server on port 3000. Open up your browser and head over to:
 

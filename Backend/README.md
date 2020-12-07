@@ -1,12 +1,3 @@
-# ecommerce-api-node
-
-## Introduction
-
-This project is the backend of E-Commerce React App, an imaginary online shopping.
-
-## Setup
-
-Make sure to follow all these steps exactly as explained below.
 
 ### Install MongoDB
 
