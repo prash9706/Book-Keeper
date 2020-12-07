@@ -108,7 +108,7 @@ class Books extends Component {
         <p>There are no book in the database.</p>
         {user && user.isAdmin && (
             <Link
-              to="/createBook/new"
+              to="/books/new"
               className="btn btn-primary"
               style={{ marginBottom: 20 }}
             >
