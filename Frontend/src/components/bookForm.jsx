@@ -104,7 +104,6 @@ class BookForm extends Form {
   }
 
   doSubmit = async (e) => {
-    console.log(e);
     await saveBook(this.state.data);
     this.props.history.push("/books");
   };

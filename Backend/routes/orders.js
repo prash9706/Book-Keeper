@@ -20,7 +20,6 @@ router.get("/:userId", async (req, res) => {
         await placedOrder.save();
         return res.send(placedOrder);
     }else{
-        console.log(items.Orders);
         items.Orders.push({books: req.body.books});
         const updatedItem = await Order.findByIdAndUpdate(
           items._id,

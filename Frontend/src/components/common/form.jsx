@@ -18,20 +18,6 @@ class Form extends Component {
     const errors = {};
     for (let item of error.details) errors[item.path[0]] = item.message;
     return errors;
-
-    // console.log(result);
-
-    // const errors = {};
-
-    // const { data } = this.state;
-    // if (data.username === "") {
-    //   errors.username = "Username Required.";
-    // }
-    // if (data.password === "") {
-    //   errors.password = "Password Required.";
-    // }
-
-    // return Object.keys(errors).length === 0 ? null : errors;
   };
 
   validateProperty = ({ name, value }) => {
@@ -39,22 +25,10 @@ class Form extends Component {
     const schema = { [name]: this.schema[name] };
     const { error } = Joi.validate(obj, schema);
     return error ? error.details[0].message : null;
-
-    // if (name === "username") {
-    //   if (value === "") return "Username Required.";
-    // }
-    // if (name === "password") {
-    //   if (value === "") return "Password Required.";
-    // }
   };
 
   handleSubmit = e => {
-    console.log(e);
     e.preventDefault();
-
-    // const username = this.username.current.value;
-    // console.log(username);
-
     const errors = this.validate();
     this.setState({ errors: errors || {} });
     if (errors) return;

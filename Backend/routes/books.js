@@ -21,7 +21,6 @@ router.post("/", [auth], async (req, res) => {
 
   const course = await Course.findById(req.body.courseId);
   if (!course) return res.status(400).send("Invalid course.");
-console.log(req.body.imageId);
   const book = new Book({
     title: req.body.title,
     course: {

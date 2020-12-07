@@ -37,11 +37,8 @@ class Books extends Component {
 
     try {
       await deleteBook(book._id);
-      // console.log("delete");
     } catch (ex) {
-      // console.log("ex");
       if (ex.response && ex.response.status === 404) {
-        // console.log("error");
         toast.error("Already Deleted");
       }
       this.setState({ books: originalBooks });
